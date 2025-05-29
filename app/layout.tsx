@@ -1,11 +1,10 @@
 import type {Metadata} from "next";
 import {Raleway} from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navbar/Navbar";
-import Footer from "@/components/Footer";
 import {SessionProvider} from "next-auth/react";
-// import auth from "@/auth";
 import {auth} from "@/auth";
+import Navbar from "@/components/navbar/navbar";
+import Footer from "@/components/footer";
 
 const raleway = Raleway({
   variable: "--font-Raleway",
