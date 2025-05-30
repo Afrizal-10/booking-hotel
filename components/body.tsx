@@ -3,9 +3,11 @@ import Card from "./card";
 import {getRoom} from "@/lib/data";
 import {notFound} from "next/navigation";
 
-const Main = async () => {
+const Body = async () => {
   const room = await getRoom();
-  if (!room) return notFound;
+
+  if (!room || room.length === 0) return notFound();
+
   return (
     <div className="max-w-screen-xl py-6 pb-20 px-4 mx-auto">
       <div className="grid gap-7 md:grid-cols-3">
@@ -17,4 +19,4 @@ const Main = async () => {
   );
 };
 
-export default Main;
+export default Body;

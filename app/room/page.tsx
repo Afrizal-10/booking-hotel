@@ -1,5 +1,5 @@
 import HeaderSection from "@/components/header-section";
-import Main from "@/components/main";
+import Main from "@/components/body";
 import {Metadata} from "next";
 import {Suspense} from "react";
 import RoomSkeleton from "@/components/skeletons/room-skeleton";

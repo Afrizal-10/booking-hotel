@@ -1,7 +1,7 @@
-import Hero from "@/components/Hero";
-import Main from "@/components/main";
+import Hero from "@/components/hero";
+import Body from "@/components/body";
 
-export default function HomePage() {
+export default async function HomePage() {
   return (
     <>
       <Hero />
@@ -13,7 +13,7 @@ export default function HomePage() {
           doloribus?
         </p>
       </div>
-      <Main />
+      <Body />
     </>
   );
 }

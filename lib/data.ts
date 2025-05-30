@@ -26,6 +26,7 @@ export const getRoom = async () => {
     } else {
       console.error("Unknown error getRoom:", error);
     }
+    return []; // Kembalikan array kosong kalau error
   }
 };
 
